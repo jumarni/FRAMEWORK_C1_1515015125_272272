@@ -7,21 +7,20 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\mahasiswa;
 
-class mahasiswacontroller extends Controller
+class MahasiswaController extends Controller
 {
-    public function awal(){
-	return "Hello dari MahasiswaController";
-	}
-	public function tambah(){
-		return $this->simpan();
-	}
-	public function simpan(){
-		$mahasiswa = new mahasiswa();
-		$mahasiswa->nama ='marny';
-		$mahasiswa->nim ='1515015125';
-		$mahasiswa->alamat ='ponpes alfajar air hitam';
-		$mahasiswa->pengguna_id =1;
-		$mahasiswa->save();
-		return"Data dengan username {$mahasiswa->nama} telah disimpan";
-}
+     public function awal(){
+    	return"Mahasiswa Mengambil Matakuliah Framework";
+    }
+    public function tambah(){
+    	return $this->simpan();
+    }
+    public function simpan(){
+    	$mahasiswa = new mahasiswa();
+    	$mahasiswa->nama = 'nonik sriningsih';
+    	$mahasiswa->nim = '1515015000';
+    	$mahasiswa->pengguna_id= '1';
+    	$mahasiswa->save();
+    	return "data dengan nama {$mahasiswa->nama} telah disimpan";
+    }
 }
