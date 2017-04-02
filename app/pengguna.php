@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Pengguna extends Model
 {
-    Protected $table = 'pengguna';
-    Protected $fillable = ['username','password'];
+     //
+    protected $table='pengguna';
+    //protected $fillable=['username','password'];
 }
